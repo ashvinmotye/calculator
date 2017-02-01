@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clickable Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="title">Calculator</div>
+
+	<div class="col">
+		<p>First number</p>
+		<div class="left" onclick="return addLeft(1);">1</div>
+		<div class="left" onclick="return addLeft(2);">2</div>
+		<div class="left" onclick="return addLeft(3);">3</div>
+		<div class="left" onclick="return addLeft(4);">4</div>
+		<div class="left" onclick="return addLeft(5);">5</div>
+		<div class="left" onclick="return addLeft(6);">6</div>
+		<div class="left" onclick="return addLeft(7);">7</div>
+		<div class="left" onclick="return addLeft(8);">8</div>
+		<div class="left" onclick="return addLeft(9);">9</div>
+		<div class="left" onclick="return addLeft(0);">0</div>
+	</div> <!--end of .col-->
+
+	<div class="col">
+		<p>Second number</p>
+		<div class="right" onclick="return addRight(1);">1</div>
+		<div class="right" onclick="return addRight(2);">2</div>
+		<div class="right" onclick="return addRight(3);">3</div>
+		<div class="right" onclick="return addRight(4);">4</div>
+		<div class="right" onclick="return addRight(5);">5</div>
+		<div class="right" onclick="return addRight(6);">6</div>
+		<div class="right" onclick="return addRight(7);">7</div>
+		<div class="right" onclick="return addRight(8);">8</div>
+		<div class="right" onclick="return addRight(9);">9</div>
+		<div class="right" onclick="return addRight(0);">0</div>
+	</div> <!--end of .col-->
+
+	<div>
+		<div id="left-number"></div>
+		<div id="right-number"></div>
+		<br>
+		<div id="operations">
+			<div class="ops" id="plus" onclick="return operator('+');">+</div>
+			<div class="ops" id="minus" onclick="return operator('-');"> - </div>
+			<div class="ops" id="multiply" onclick="return operator('*');">*</div>
+			<div class="ops" id="divide" onclick="return operator('/');">/</div>
+			<div class="ops" id="remainder" onclick="return operator('%');">%</div>
+		</div>
+		<div  id="result">000</div>
+	</div> <!--end of .result-->
+
+	<div class="reset" onclick="return clearResult();">
+		Reset
+	</div> <!--end of .reset-->
+</div> <!--end of .container-->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
